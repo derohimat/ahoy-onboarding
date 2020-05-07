@@ -10,7 +10,7 @@ Add it as a dependency in your app's build.gradle file
 
 ```groovy
 dependencies {
-    compile 'com.codemybrainsout.onboarding:onboarder:1.0.4'
+    implementation 'com.github.derohimat:ahoy-onboarding:1.1.0'
 }
 ```
 
@@ -113,6 +113,11 @@ setFinishButtonDrawableStyle(ContextCompat.getDrawable(this, R.drawable.rounded_
 * [chyrta/AndroidOnboarder](https://github.com/chyrta/AndroidOnboarder)
 
 ## Changelog
+
+### v1.1.0
+
+Migrate to Android X and update Android Gradle version
+add set finish button background color by [Naufal Prakoso](https://github.com/naufalprakoso)
 
 ### v1.0.1
 
