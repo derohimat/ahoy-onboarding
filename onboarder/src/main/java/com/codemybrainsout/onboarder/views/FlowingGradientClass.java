@@ -7,7 +7,7 @@ import android.widget.RelativeLayout;
 
 public class FlowingGradientClass {
 
-    int Duration=4000;
+    int Duration = 4000;
     RelativeLayout rl;
     LinearLayout ll;
     ImageView im;
@@ -20,6 +20,7 @@ public class FlowingGradientClass {
 
         return this;
     }
+
     public FlowingGradientClass onLinearLayout(LinearLayout ll) {
         this.ll = ll;
         return this;
@@ -34,24 +35,21 @@ public class FlowingGradientClass {
         this.rl = rl;
         return this;
     }
+
     public FlowingGradientClass start() {
 
-        if(ll!=null){
+        if (ll != null) {
             ll.setBackgroundResource(d);
-        }
-        else if(rl!=null){
+        } else if (rl != null) {
             rl.setBackgroundResource(d);
-        }
-        else if(im!=null){
+        } else if (im != null) {
             im.setBackgroundResource(d);
         }
-        if(ll!=null){
+        if (ll != null) {
             frameAnimation = (AnimationDrawable) ll.getBackground();
-        }
-        else if(rl!=null){
+        } else if (rl != null) {
             frameAnimation = (AnimationDrawable) rl.getBackground();
-        }
-        else if(im!=null){
+        } else if (im != null) {
             frameAnimation = (AnimationDrawable) im.getBackground();
         }
         frameAnimation.setEnterFadeDuration(Duration);
@@ -65,6 +63,7 @@ public class FlowingGradientClass {
         this.d = d;
         return this;
     }
+
     public FlowingGradientClass setAlpha(int alphaint) {
         this.alphaint = alphaint;
         frameAnimation.setAlpha(alphaint);

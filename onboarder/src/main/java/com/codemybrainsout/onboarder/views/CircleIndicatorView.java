@@ -3,12 +3,13 @@ package com.codemybrainsout.onboarder.views;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.annotation.ColorRes;
-import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
 import com.codemybrainsout.onboarder.R;
+
+import androidx.annotation.ColorRes;
+import androidx.core.content.ContextCompat;
 
 public class CircleIndicatorView extends View {
 

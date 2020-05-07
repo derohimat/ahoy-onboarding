@@ -2,12 +2,12 @@ package com.codemybrainsout.onboarder;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
-import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.CardView;
+import androidx.annotation.ColorRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
+import androidx.fragment.app.Fragment;
+import androidx.core.content.ContextCompat;
+import androidx.cardview.widget.CardView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -116,10 +116,10 @@ public class AhoyOnboarderFragment extends Fragment {
         marginRight = bundle.getInt(AHOY_PAGE_MARGIN_RIGHT, (int) dpToPixels(0, getActivity()));
 
         view = inflater.inflate(R.layout.fragment_ahoy, container, false);
-        ivOnboarderImage = (ImageView) view.findViewById(R.id.iv_image);
-        tvOnboarderTitle = (TextView) view.findViewById(R.id.tv_title);
-        tvOnboarderDescription = (TextView) view.findViewById(R.id.tv_description);
-        cardView = (CardView) view.findViewById(R.id.cv_cardview);
+        ivOnboarderImage = view.findViewById(R.id.iv_image);
+        tvOnboarderTitle = view.findViewById(R.id.tv_title);
+        tvOnboarderDescription = view.findViewById(R.id.tv_description);
+        cardView = view.findViewById(R.id.cv_cardview);
 
         if (title != null) {
             tvOnboarderTitle.setText(title);

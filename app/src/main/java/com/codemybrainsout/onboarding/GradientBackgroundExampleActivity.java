@@ -1,12 +1,10 @@
 package com.codemybrainsout.onboarding;
 
-import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.util.DisplayMetrics;
+import androidx.core.content.ContextCompat;
+
 import android.widget.Toast;
 
 import com.codemybrainsout.onboarder.AhoyOnboarderActivity;

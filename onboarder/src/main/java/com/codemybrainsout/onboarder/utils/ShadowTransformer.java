@@ -1,8 +1,9 @@
 package com.codemybrainsout.onboarder.utils;
 
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.CardView;
 import android.view.View;
+
+import androidx.cardview.widget.CardView;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by Rahul Juneja on 30-08-2016.
@@ -17,8 +18,11 @@ public class ShadowTransformer implements ViewPager.OnPageChangeListener, ViewPa
     public interface CardAdapter {
 
         int MAX_ELEVATION_FACTOR = 6;
+
         float getBaseElevation();
+
         CardView getCardViewAt(int position);
+
         int getCount();
     }
 
@@ -36,7 +40,7 @@ public class ShadowTransformer implements ViewPager.OnPageChangeListener, ViewPa
                 currentCard.animate().scaleY(1);
                 currentCard.animate().scaleX(1);
             }
-        }else if(!mScalingEnabled && enable){
+        } else if (!mScalingEnabled && enable) {
             // grow main card
             CardView currentCard = mAdapter.getCardViewAt(mViewPager.getCurrentItem());
             if (currentCard != null) {

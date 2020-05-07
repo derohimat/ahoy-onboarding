@@ -1,9 +1,7 @@
 package com.codemybrainsout.onboarding;
 
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.annotation.IntegerRes;
 import android.widget.Toast;
 
 import com.codemybrainsout.onboarder.AhoyOnboarderActivity;
